@@ -36,11 +36,12 @@ func main() {
 
 	var q Quantifier
 
-	// WHAT IF: we change 3 to -4 or 0 or "def"
+	// WHAT IF: we change 3 to -4 or 0 or "def" ?
+	// WHAT IF: we change myInt(3) to 3 or int(3) ?
 	q = myInt(3) // make 123 a myInt, eg woman("John") makes "John" a woman
 	fmt.Println(q.Quantify())
 
-	// WHAT IF: we change "abc" to "four" or 0x20AC (unicode for Euro)
+	// WHAT IF: we change "abc" to "four" or 0x20AC (unicode for Euro) ?
 	q = myStr("abc") // make "abc" be of type myStr
 	fmt.Println(q.Quantify())
 }
