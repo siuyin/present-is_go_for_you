@@ -52,10 +52,9 @@ I want to write web frontends.
 I can write web frontends in java,
 I still need to learn about web frontends but I don't have to learn a new language.
 
----
-
+.image ball-peen-hammer.jpg 96 _
 Because I hammer in nails all day,
-I can instinctively wield a hammer.
+I can instinctively wield a ball-peen hammer.
 
 I want to pull out nails.
 I still need to learn about pulling out nails but I don't have to learn a new tool.
@@ -113,7 +112,8 @@ Strong static typing:
 
 Check your internalized skills inventory
 Know what you want, choose tool candidates
-Decide if you wish to consume Mind Budget
+
+Decide if you wish to consume Mind Budget to learn something new.
 
 * Go has implicitly satisfied interfaces
 
@@ -123,15 +123,15 @@ Because this type is an *interface*, I do not provide a Quantify implementation.
 
 .code cmd/intf/main.go /10 /,/20 /
 
-I define below a *myStr* type.
-This type has a Quantify() method that returns an integer.
+I define below a *myStr* type. It is derived from go's built-in string type.
+myStr type has a Quantify() method that returns an integer.
 
 .code cmd/intf/main.go /20 /,/30 /
 
 * Go interfaces (2)
 
-I define below a *myInt* type.
-This type has a Quantify() method that returns an integer.
+I define below a *myInt* type derived from go's built-in int type.
+myInt type has a Quantify() method that returns an integer.
 
 .code cmd/intf/main.go /30 /,/40 /
 
@@ -139,7 +139,9 @@ This type has a Quantify() method that returns an integer.
 
 Will the code below work?
 
-.play cmd/intf/main.go /40 /,/50 /
+Can myInt / myStr type be assigned to Quantifier interface type?
+
+.play -edit  cmd/intf/main.go /40 /,/50 /
 
 * Consider the code below
 
@@ -157,3 +159,20 @@ This is very useful for testing. We can have:
 
   q = FakeExamPaper("https://does.not.matter/siuyin.doc") // does not make internet call
   fmt.Println(q.Quantify())                               // always returns 100
+
+
+* Go has built-in concurrency
+
+The routine below prints a  "+", every second, forever. 
+
+.code cmd/concurrency/main.go /10 /,/20 /
+
+The routine below prints a  ".", every second, forever. 
+
+.code cmd/concurrency/main.go /20 /,/30 /
+
+* Concurrent plus and dot
+
+Modify the code below to run plus and dot concurrently.
+
+.play -edit cmd/concurrency/main.go /30 /,/40 /

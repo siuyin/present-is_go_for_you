@@ -35,10 +35,12 @@ func main() {
 
 	var q Quantifier
 
-	q = myInt(3)
+	// Change 3 to -4 or 0
+	q = myInt(3) // make 123 a myInt, eg woman("John") makes "John" a woman
 	fmt.Println(q.Quantify())
 
-	q = myStr("abc")
+	// change abc to four
+	q = myStr("abc") // make "abc" be of type myStr
 	fmt.Println(q.Quantify())
 }
 
