@@ -73,6 +73,7 @@ A hammer is good for:
 - being simple to read and understand
 - having implicit interface satisfaction
 - having built-in concurrency
+- being portable across Linux, Windows, Darwin (mac), ARM
 
 * Go is somewhat familiar
 
@@ -177,6 +178,21 @@ Modify the code below to run plus and dot concurrently.
 
 .play -edit cmd/concurrency/main.go /30 /,/40 /
 
+* Go is portable
+
+If your go code does not reference any platform specific features;
+(eg. Load Windows DLLs)
+
+and does not use c-libraries (which are compiled for specific platforms);
+
+you can:
+
+  CGO_ENABLED=0 GOOS=windows GOARCH=386 go build helloWorld.go
+
+See the complete list here:
+.link https://golang.org/doc/install/source#environment 
+
 * Presentation and code download
 
 .link https://github.com/siuyin/present-is_go_for_you
+
