@@ -20,8 +20,6 @@ type myInt int
 
 func (i myInt) Quantify() int {
 	switch {
-	case i == 0:
-		return 0
 	case i < 0:
 		return -1
 	case i > 0:
