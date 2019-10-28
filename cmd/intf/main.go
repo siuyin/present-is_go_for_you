@@ -11,7 +11,7 @@ type Quantifier interface {
 type myStr string
 
 func (s myStr) Quantify() int {
-	fmt.Printf("quatifying: %s\n", s)
+	fmt.Printf("quantifying: %s\n", s)
 	return len(s)
 }
 
