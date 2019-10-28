@@ -9,19 +9,19 @@ siuyin@beyondbroadcast.com
 * Mind Budget
 
 * Mind Budget
-Anything that you cannot do instinctively consumes mind budget.
+Anything that you cannot do instinctively consumes Mind Budget.
 
-We all have limited mind budget.
+We all have limited Mind Budget.
 
 ---
 
 Example:
 
 If you do not know how to drive a car.
-Learning to drive consumes mind budget.
+Learning to drive consumes Mind Budget.
 
 If you already do know how to drive.
-Driving does not consume mind budget,
+Driving does not consume Mind Budget,
 but paying attention to the changing road conditions does.
 
 * Goals
@@ -176,3 +176,7 @@ The routine below prints a  ".", every second, forever.
 Modify the code below to run plus and dot concurrently.
 
 .play -edit cmd/concurrency/main.go /30 /,/40 /
+
+* Presentation and code download
+
+.link https://github.com/siuyin/present-is_go_for_you

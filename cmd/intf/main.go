@@ -11,6 +11,7 @@ type Quantifier interface {
 type myStr string
 
 func (s myStr) Quantify() int {
+	fmt.Printf("quatifying: %s\n", s)
 	return len(s)
 }
 
@@ -35,11 +36,11 @@ func main() {
 
 	var q Quantifier
 
-	// Change 3 to -4 or 0
+	// WHAT IF: we change 3 to -4 or 0 or "def"
 	q = myInt(3) // make 123 a myInt, eg woman("John") makes "John" a woman
 	fmt.Println(q.Quantify())
 
-	// change abc to four
+	// WHAT IF: we change "abc" to "four" or 0x20AC (unicode for Euro)
 	q = myStr("abc") // make "abc" be of type myStr
 	fmt.Println(q.Quantify())
 }
