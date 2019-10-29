@@ -39,7 +39,7 @@ func main() {
 	q = myInt(3) // make 123 a myInt, eg woman("John") makes "John" a woman
 	fmt.Println(q.Quantify())
 
-	// WHAT IF: we change "abc" to "four" or 0x20AC (unicode for Euro) ?
+	// WHAT IF: we change "abc" to "four" or 0x20AC (Euro symbol unicode code point) ?
 	q = myStr("abc") // make "abc" be of type myStr
 	fmt.Println(q.Quantify())
 }
