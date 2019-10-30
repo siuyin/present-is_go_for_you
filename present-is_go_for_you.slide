@@ -185,10 +185,15 @@ Modify the code below to run plus and dot concurrently.
 
 .play -edit cmd/concurrency/main.go /30 /,/40 /
 
-javascript:
+* Concurrency: javascript edition
 
-  function plus(){setInterval(()=>{console.log('+')},1000)}
-  function  dot(){setInterval(()=>{console.log('.')},1000)}
+  function plus(){
+    setInterval( ()=>{console.log('+')}, 1000 );
+  }
+
+  function dot(){
+    setInterval( ()=>{console.log('.')}, 1000 );
+  }
 
 ((webworker ≈ java thread) = os-level thread) ≠ goroutine
 
