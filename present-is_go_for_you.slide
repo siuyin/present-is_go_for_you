@@ -187,8 +187,8 @@ Modify the code below to run plus and dot concurrently.
 
 javascript:
 
-  var plus = ()=>{setInterval(()=>{console.log('+')},1000)};
-  var dot  = ()=>{setInterval(()=>{console.log('.')},1000)};
+  function plus(){setInterval(()=>{console.log('+')},1000)}
+  function  dot(){setInterval(()=>{console.log('.')},1000)}
 
 ((webworker ≈ java thread) = os-level thread) ≠ goroutine
 
