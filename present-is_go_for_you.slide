@@ -95,6 +95,13 @@ A hammer is good for:
 
 .play cmd/typeSafe1/main.go
 
+Is javascript type-safe?
+
+  In new browser tab, F12 to open developer console:
+  
+  var i = 2;
+  i = 'b';
+
 * Go is type-safe (2)
 
 .play cmd/typeSafe2/main.go
