@@ -178,6 +178,13 @@ Modify the code below to run plus and dot concurrently.
 
 .play -edit cmd/concurrency/main.go /30 /,/40 /
 
+javascript:
+
+  var plus = ()=>{setInterval(()=>{console.log('+')},1000)};
+  var dot  = ()=>{setInterval(()=>{console.log('.')},1000)};
+
+((webworker ≈ java thread) = os-level thread) ≠ goroutine
+
 * Go is portable
 
 If your go code does not reference any platform specific features;
