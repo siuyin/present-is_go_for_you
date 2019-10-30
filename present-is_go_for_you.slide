@@ -110,11 +110,11 @@ Is javascript type-safe?
 
 Strong static typing:
 - allows comprehensive compile-time checks
-- has stable, consistent, predictable types
+- has stable, consistent, predictable at run-time
 
 Strong static typing:
-- is inflexible, rigid
-- is not dynamic, unchanging
+- is inflexible, rigid, requires defining when program is written
+- is not dynamic, unchanging, type not replaceable at run-time
 
 ---
 
