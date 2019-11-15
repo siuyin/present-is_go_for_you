@@ -195,6 +195,13 @@ Modify the code below to run plus and dot concurrently.
     setInterval( ()=>{console.log('.')}, 1000 );
   }
 
+
+F12 to display web console, copy the above functions.
+Execute:
+
+  plus()
+  dot()
+
 ((webworker ≈ java thread) = os-level thread) ≠ goroutine
 
 * Is Go's Concurrency "good"?
