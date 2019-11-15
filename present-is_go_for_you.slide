@@ -197,6 +197,29 @@ Modify the code below to run plus and dot concurrently.
 
 ((webworker ≈ java thread) = os-level thread) ≠ goroutine
 
+* Is Go's Concurrency "good"?
+
+Hello world static content http server:
+
+  func main() {
+          http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+                  w.Write([]byte("Hello World!\n"))
+          })
+  
+          log.Fatal(http.ListenAndServe(":8081", nil))
+  }
+
+ab -n1000 -c100 http://127.0.0.1:8081/
+Requests per second:    11100.87 [#/sec] (mean)
+
+---
+
+nginx serving "Hello World!":
+
+ab -n1000 -c100 http://127.0.0.1/
+Requests per second:    9644.04 [#/sec] (mean)
+
+
 * Go is portable
 
 If your go code does not reference any platform specific features;
