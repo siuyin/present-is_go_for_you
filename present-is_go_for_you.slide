@@ -130,7 +130,7 @@ Decide if you wish to consume Mind Budget to learn something new.
 
 I define below a *Quantifier* type.
 This type must have a Quantify() method that returns an integer.
-Because this type is an *interface*, I do not provide a Quantify implementation.
+Because this type is an *interface*, it just declares the methods that must be satisfied.
 
 .code cmd/intf/main.go /10 /,/20 /
 
@@ -156,7 +156,7 @@ Can myInt / myStr type be assigned to Quantifier interface type?
 
 * Consider the code below
 
-  q = ExamPaper("https://my.school.com/siuyin.doc")
+  q = NewExamPaper("https://my.school.com/siuyin.doc")
   fmt.Println(q.Quantify())
 
 If ExamPaper is a type that has a Quantify() method that returns an integer,
@@ -168,7 +168,7 @@ We do not have to state: ExamPaper implements Quantifier.
 
 This is very useful for testing. We can have:
 
-  q = FakeExamPaper("https://does.not.matter/siuyin.doc") // does not make internet call
+  q = NewFakeExamPaper("https://does.not.matter/siuyin.doc") // does not make internet call
   fmt.Println(q.Quantify())                               // always returns 100
 
 
