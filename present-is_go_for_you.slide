@@ -104,7 +104,10 @@ Is javascript type-safe?
 
 * Go is type-safe (2)
 
-.play cmd/typeSafe2/main.go
+.play -edit cmd/typeSafe2/main.go
+
+Will the above code run?
+If not, how do we edit it to make it run?
 
 * Two sides to a coin
 
